@@ -17,11 +17,11 @@ let user; //undefined
 const id=Symbol('123') // symbol
 const anotherId = Symbol('123')
 
-console.log(id === anotherId);
+// console.log(id === anotherId);
 
 const bigNumber = 45764756475745746n //bigint
 
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 
 //Reference (Non - primitive)
@@ -38,8 +38,37 @@ let obj1 = {
 } // object
 
 const myFunction = function(){
-    console.log("Hello World");
+    // console.log("Hello World");
     
 }
 
-console.log(typeof id);
+// console.log(typeof id);
+
+//+++++++++++++++++++++++++++++++++++++++++++++
+
+//Memory types
+// stack , Heap
+ //Stack used in primitive types
+ //Heap  used in Non-primitive
+
+ let myYoutubeName = "Hardikdev" //goes to stack
+
+ let anothername = myYoutubeName
+
+ anothername = "iamdevil"
+
+ console.log(myYoutubeName);
+ console.log(anothername);
+
+ let user1 = {
+    email : "user@google.com",
+    upi : "user@ybl"
+ }
+
+ let user2 = user1
+
+ user2.email = "hardik@google.com"
+
+ console.log(user1.email);
+ console.log(user2.email);
+ 
