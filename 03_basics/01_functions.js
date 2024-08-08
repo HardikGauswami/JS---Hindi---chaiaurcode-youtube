@@ -37,4 +37,37 @@ function loginUserMsg(username = "sam"){
 }
 
 // console.log(loginUserMsg("Hardik")) // Hardik just logged in
-console.log(loginUserMsg()) //undefined just logged in
+// console.log(loginUserMsg()) //undefined just logged in
+
+function calculateCartPrice(...num1){ //rest operator
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 500));//[200, 400, 500]
+
+const user = {
+    username : "Hardik",
+    price : 199
+}
+// how to take object as parameter in function
+function handObject(anyObject){
+    console.log(`username is ${anyObject.username} and price is ${anyObject.price}`);
+    
+}
+
+handObject(user) // username is Hardik and price is 199
+
+handObject({
+    username : "sam",
+    price : 399
+}) // another method
+
+const myNewArr = [100, 200, 300, 400]
+
+function returnSecondValue(getArray) {
+     return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArr)); // 200
+
+console.log(returnSecondValue([200,400,1200,1000])); // 400 another method
